@@ -58,12 +58,12 @@
             <a href="./">Kandue</a>
         </div>
         <h1>Privacy Policy</h1>
-        <p class="updated">Kandue for Graders · Last updated: 2026-09-10</p>
+        <p class="updated">Kandue for Graders · Last updated: 2026-09-16</p>
 
         <p>Kandue for Graders shows a TA or instructor which of their students on Canvas LMS still need a grade, longest wait first. It reads the course over your own Canvas session and never writes to it. No backend of its own. Kandue for Students, the companion for the person handing the work in, has <a href="privacy.html">its own policy</a>.</p>
 
         <h2>What it reads</h2>
-        <p>Your Canvas courses where you are a TA or teacher, and for the one you pick: the sections, the students enrolled (name, login id, section), the TAs and teachers, the assignments, each submission's status, timestamps, score and who graded it, and, if you read the split from them, the course's group sets. That is what the gradebook already shows you, read through Canvas's <code>/api/v1</code> on your signed-in session, so the extension never sees, stores or transmits a password or token. Canvas's submission records carry the submitted text as well; the panel keeps only the status, times, score and grader, and never stores or shows the work itself.</p>
+        <p>Your Canvas courses where you are a TA or teacher, and for the one you pick: the sections, the students enrolled (name, login id, section), the TAs and teachers, the assignments, each submission's status, timestamps, how late it was handed in, score and who graded it, and, if you read the split from them, the course's group sets. That is what the gradebook already shows you, read through Canvas's <code>/api/v1</code> on your signed-in session, so the extension never sees, stores or transmits a password or token. Canvas's submission records carry the submitted text as well; the panel keeps only the status, times, score and grader, and never stores or shows the work itself. It also asks Canvas for each submission's rubric, so that work a grader has begun but not yet scored can be told apart from work nobody has opened; of that, only the yes-or-no is kept, never the rubric's points or comments.</p>
 
         <h2>Where it stays</h2>
         <ul>
