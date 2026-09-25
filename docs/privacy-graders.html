@@ -58,7 +58,7 @@
             <a href="./">Kandue</a>
         </div>
         <h1>Privacy Policy</h1>
-        <p class="updated">Kandue for Graders · Last updated: 2026-09-16</p>
+        <p class="updated">Kandue for Graders · Last updated: 2026-09-25</p>
 
         <p>Kandue for Graders shows a TA or instructor which of their students on Canvas LMS still need a grade, longest wait first. It reads the course over your own Canvas session and never writes to it. No backend of its own. Kandue for Students, the companion for the person handing the work in, has <a href="privacy.html">its own policy</a>.</p>
 
@@ -68,15 +68,12 @@
         <h2>Where it stays</h2>
         <ul>
             <li><strong>The course stays on your device.</strong> The students, submissions and grades last read for the course you picked are kept in <code>chrome.storage.local</code>, so the queue is on screen when you open the panel rather than after a wait. The next refresh replaces them, and they clear when you remove the extension.</li>
-            <li><strong>Settings stay local.</strong> Your Canvas address, the course, who grades whom, and a grading sheet you drop in as a CSV live there too, and clear the same way.</li>
-            <li><strong>Nothing is transmitted.</strong> The only servers contacted are your own school's Canvas and, if you connect one, Google Sheets. There is no Kandue server, no account, no analytics and no third party.</li>
+            <li><strong>Settings stay local.</strong> Your Canvas address, the course and who grades whom live there too, and clear the same way.</li>
+            <li><strong>Nothing is transmitted.</strong> The only server contacted is your own school's Canvas. There is no Kandue server, no account, no analytics and no third party. Copy for Sheets on the course report puts a table on your clipboard; where you paste it is up to you, and the extension sends it nowhere.</li>
         </ul>
 
         <h2>When it reads Canvas</h2>
         <p>When you open or refresh the panel; about every half hour, so the number on the toolbar icon is current; and after a page finishes loading on your Canvas, which is usually the moment grading has just changed something. A refresh is skipped when what it already has is recent enough. To tell whether a page that loaded is your Canvas, it compares that tab's address with the Canvas address in your settings. It reads nothing else from any page, and no tab outside the sites you have granted it.</p>
-
-        <h2>A grading sheet</h2>
-        <p>If your TA team keeps who-grades-whom in a Google Sheet, pasting its link asks your permission for <code>docs.google.com</code> at that moment, never at install. The sheet is then read over your own Google session, the way Canvas is, with no token and no change to its sharing. Leave the link out and the permission is never asked for.</p>
 
         <h2>Nothing is written</h2>
         <p>Every request is a read. The extension enters no grade, posts no comment and sends no message; grading stays in SpeedGrader. It holds no <code>cookies</code> permission and has no path to the token Canvas requires for a write.</p>

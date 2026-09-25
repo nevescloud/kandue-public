@@ -58,13 +58,14 @@
             <a href="./">Kandue</a>
         </div>
         <h1>Privacy Policy</h1>
-        <p class="updated">Last updated: 2026-09-16</p>
+        <p class="updated">Last updated: 2026-09-25</p>
 
-        <p>Kandue reads your Canvas LMS assignments and announcements, and the list of pages in each of your courses, and turns them into ranked priorities, a bar that finds any of them by name, practice quizzes and reading aids. It can write one thing back, if you ask it to, and that is described below. No backend of its own. Kandue for Graders, the companion for TAs and instructors, has <a href="privacy-graders.html">its own policy</a>.</p>
+        <p>Kandue reads your Canvas LMS assignments, your own grades on them, and announcements, and the list of pages in each of your courses, and turns them into ranked priorities, a bar that finds any of them by name, practice quizzes and reading aids. It can write one thing back, if you ask it to, and that is described below. No backend of its own. Kandue for Graders, the companion for TAs and instructors, has <a href="privacy-graders.html">its own policy</a>.</p>
 
         <h2>Data</h2>
         <ul>
-            <li><strong>Stays local.</strong> Courses, assignments, announcements, your courses&rsquo; page lists, and settings live in <code>chrome.storage.local</code> and clear when you remove the extension. Canvas is read via <code>/api/v1</code> on your existing browser session, and credentials are never seen, stored, or transmitted.</li>
+            <li><strong>Stays local.</strong> Courses, assignments, your grades, announcements, your courses&rsquo; page lists, and settings live in <code>chrome.storage.local</code> and clear when you remove the extension. Canvas is read via <code>/api/v1</code> on your existing browser session, and credentials are never seen, stored, or transmitted.</li>
+            <li><strong>Your grades are your own.</strong> So each assignment can show what it is worth toward your course grade, Kandue reads your own score on each assignment, how your course weights its assignment groups, and your current course grade. It never reads anyone else&rsquo;s.</li>
             <li><strong>The page list is titles and links only.</strong> So the find bar can open a page you name, Kandue reads each course&rsquo;s tabs and module items &mdash; what they are called and where they live on your Canvas. It never reads the contents of those pages, and never the questions of a graded quiz. This list is built the first time you use the bar and refreshed about once a day, not on every deadline refresh.</li>
             <li><strong>Your coursework is never transmitted.</strong> The only server Kandue contacts is your own school's Canvas, to read your assignments and, if you have turned it on, to mark one done. Priorities are ranked inside the extension. Practice quizzes, summaries and translations all use Chrome's built-in AI model, which runs on your own computer, so the course material they read never leaves the device. There is no Kandue server, no account, and no third-party AI provider.</li>
         </ul>
