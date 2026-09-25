@@ -1,14 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
 <!--
-  The family mark: the shipped cap on both product colours, split.
+  The family mark: the graders cap resting on the students book.
 
-  Vector because the mark it replaces was lifted out of students/icon-128.png
-  with a luminance level (-level 35%,92%), which read the source's antialiased
-  edges as partial alpha: the board carried a blue fringe where the split
-  showed through it, and every size came off one 128px raster. The shape here
-  is measured off that same icon, so it is the shipped cap and not a redraw:
+  The book is students/store/brand/book-icon.svg's glyph at 0.72. The cap is
+  measured off graders/icon-128.png, so it is the shipped cap and not a redraw
+  (a luminance level lifted off the raster read its antialiased edges as partial
+  alpha, so it is vector), drawn here at 0.6:
 
-    squircle   alpha edge fits a circular corner, inset 1, radius 28
     board      rhombus, apex (63,33), widest row y=54 spanning x 18..108,
                bottom point (63,75)
     bowl       top edge is the board's lower edges dropped 5, walls at x 41
@@ -18,16 +16,23 @@
     tassel     cord x 100 from the board's lower-right edge, bead, fringe
                widening to x 96..104 by y 91
 
-  The colours are the page accents (#A61B29, #1D63C7), NOT the colours the two
-  store icons ship on (#962427 students, #244E96 graders). The one place this
-  mark is used is the navy hero band, and #244E96 against #1E3A5F is a badge
-  that disappears. docs/index.html has claimed these are the icon colours; they
-  are not, and the icons are otherwise pixel-identical to each other.
+  The red is #A3111F, the one both store icons ship on, so the mark and the
+  two icons beside it on the link-preview card are one red. It is the cap
+  icon's #962427 as displayed: that PNG carried a "Color LCD" display profile,
+  which a colour-managed viewer applies, so an untagged #962427 beside it
+  looked duller. Icons here are untagged sRGB.
 -->
-  <defs><clipPath id="sq"><rect x="1" y="1" width="126" height="126" rx="28"/></clipPath></defs>
-  <g clip-path="url(#sq)">
-    <rect width="128" height="128" fill="#A61B29"/>
-    <path d="M128 0 L128 128 L0 128 Z" fill="#1D63C7"/>
+  <rect x="1" y="1" width="126" height="126" rx="28" fill="#A3111F"/>
+  <g transform="translate(17.9,35.6) scale(0.72)">
+    <g id="half">
+      <path fill="#fff"
+            d="M13.75,40 L18,41.25 L18,79 C18,85.5 20.5,88.8 27,89.5 C42,90.6 51,93 56.5,99 C52,96.6 47,95 40,94.8 L26,95.4 C18,95.4 13.6,92 13.6,84 Z
+               M22,32.8 L26.75,34 L26.75,71 C26.75,77 28.5,80 35.75,82.3 C46,85.5 55,89.5 59,97.2 C55.5,92 48,88.6 36,87.4 C26,86.6 21.9,83 21.9,77 Z
+               M31.25,26 C38,32.5 61,32.5 62,44 L62,96.5 C58,88 52,83 44,81 C36,79 31.25,77 31.25,70.5 Z"/>
+    </g>
+    <use href="#half" transform="translate(128,0) scale(-1,1)"/>
+  </g>
+  <g transform="translate(26.2,1.2) scale(0.6)">
     <path fill="#fff" d="M63 33 L108 54 L63 75 L18 54 Z"/>
     <path fill="#fff" d="M41 70 L63 80 L85 70 L85 81 C85 88.5 75.5 91.5 63 91.5 C50.5 91.5 41 88.5 41 81 Z"/>
     <path fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round"
