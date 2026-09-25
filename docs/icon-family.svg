@@ -1,15 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
 <!--
-  The family mark: the students cap on the graders sheet.
+  The family mark is the students cap alone: the graders icon
+  (graders/store/brand/cap-check.svg) is this cap faded under a check badge, so
+  the cap already names both items.
 
-  The sheet is graders/store/brand/sheet-icon.svg's page and check at 0.6,
-  text lines dropped and the check raised into their place. The cap rests on
-  its top edge, kept off it by a red outline (paint-order stroke): sunk into
-  the page, the cap's band and the sheet fuse at 52px into one white jar. The
-  sheet is narrow enough that the tassel hangs beside its fold. The cap is
-  measured off students/icon-128.png, so it is the shipped cap and not a redraw
-  (a luminance level lifted off the raster read its antialiased edges as partial
-  alpha, so it is vector), drawn here at 0.62:
+  It is measured off students/icon-128.png, so it is the shipped cap and not
+  a redraw (a luminance level lifted off the raster read its antialiased edges as
+  partial alpha, so it is vector):
 
     board      rhombus, apex (63,33), widest row y=54 spanning x 18..108,
                bottom point (63,75)
@@ -27,21 +24,13 @@
   looked duller. Icons here are untagged sRGB.
 -->
   <rect x="1" y="1" width="126" height="126" rx="28" fill="#A3111F"/>
-  <g transform="translate(25.6,45.5) scale(0.6)">
-    <path fill="#fff" d="M38 22 H78 L96 40 V100 Q96 106 90 106 H38 Q32 106 32 100 V28 Q32 22 38 22 Z"/>
-    <path fill="#A3111F" fill-opacity=".28" d="M78 22 V36 Q78 40 82 40 H96 Z"/>
-    <path fill="none" stroke="#A3111F" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"
-          d="M47 72 L59 84 L83 58"/>
-  </g>
-  <g transform="translate(24.9,-2.1) scale(0.62)">
-    <path fill="#fff" stroke="#A3111F" stroke-width="12" stroke-linejoin="round" paint-order="stroke"
-          d="M63 33 L108 54 L63 75 L18 54 Z"/>
-    <path fill="#fff" stroke="#A3111F" stroke-width="12" paint-order="stroke"
-          d="M41 70 L63 80 L85 70 L85 81 C85 88.5 75.5 91.5 63 91.5 C50.5 91.5 41 88.5 41 81 Z"/>
-    <path fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round"
-          d="M37 72 V84 C37 90.5 48.5 94 63 94 C77.5 94 89 90.5 89 84 V72"/>
-    <path fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" d="M100 58 V76"/>
-    <ellipse fill="#fff" cx="100" cy="79.5" rx="2.3" ry="3.6"/>
-    <path fill="#fff" d="M97.8 83 L102.2 83 L103.8 88.6 C103.8 91.4 96.2 91.4 96.2 88.6 Z"/>
-  </g>
+  <path fill="#fff" stroke="#A3111F" stroke-width="12" stroke-linejoin="round" paint-order="stroke"
+        d="M63 33 L108 54 L63 75 L18 54 Z"/>
+  <path fill="#fff" stroke="#A3111F" stroke-width="12" paint-order="stroke"
+        d="M41 70 L63 80 L85 70 L85 81 C85 88.5 75.5 91.5 63 91.5 C50.5 91.5 41 88.5 41 81 Z"/>
+  <path fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round"
+        d="M37 72 V84 C37 90.5 48.5 94 63 94 C77.5 94 89 90.5 89 84 V72"/>
+  <path fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" d="M100 58 V76"/>
+  <ellipse fill="#fff" cx="100" cy="79.5" rx="2.3" ry="3.6"/>
+  <path fill="#fff" d="M97.8 83 L102.2 83 L103.8 88.6 C103.8 91.4 96.2 91.4 96.2 88.6 Z"/>
 </svg>
